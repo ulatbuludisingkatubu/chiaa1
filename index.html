@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>You're Awesome 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #ffe6f0;
+      text-align: center;
+      color: #6b004f;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff4d88;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    button {
+      background-color: #ffb6c1;
+      border: 2px solid #ff4d88;
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #6b004f;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 2px 2px 4px #ffaec9;
+    }
+
+    button:hover {
+      background-color: #ff4d88;
+      color: white;
+    }
+
+  .footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #aa3377;
+  }
+
+  .footer.from {
+  margin-top: 6px; /* jarak dekat ke teks atas */
+  }
+    
+  </style>
+</head>
+<body>
+
+  <h1>Hai Neng Chiaa 💕</h1>
+  <p>Pilih tombol dibawah sesuai mood yaa 😌</p>
+
+  <div class="button-grid">
+    <button onclick="showMessage(0)">Butuh Pelukan 🤗</button>
+    <button onclick="showMessage(1)">Lagi Lelah 😓</button>
+    <button onclick="showMessage(2)">Lagi Ngerasa Sendiri 🌧️</button>
+    <button onclick="showMessage(3)">Lagi Overthinking 🤯</button>
+    <button onclick="showMessage(4)">Lagi Minder 😶</button>
+    <button onclick="showMessage(5)">Lagi Pengen Dimengerti 🧠</button>
+    <button onclick="showMessage(6)">Pengen Dipuji 🌟</button>
+    <button onclick="showMessage(7)">Cuma Pengen Klik Aja 😋</button>
+  </div>
+
+<p class="footer">Halaman kecil ini dibuat karena kamu layak untuk merasa dihargai 🌷</p>
+<p class="footer from">From Empty Rooms, You-rise!</p>
+
+  <script>
+    const messages = [
+      "Peluk virtual buat Neng Chiaa 🤗 Kamu nggak sendiri Nengg. Ada aku di sini.",
+      "Capek itu wajar. Tapi jangan lupa: kamu hebat sudah sejauh ini. 💪",
+      "Sendiri bukan berarti sendiri. Kadang, semesta cuma minta kamu rehat dari keramaian. Btw ada aku juga hehe. 🌌",
+      "Pikiranmu aktif karena kamu peduli. Tapi jangan biarkan dia meragukan siapa kamu sebenarnya. You're Amazing Chii 💡",
+      "Kamu punya value, bahkan saat kamu merasa nggak ada apa-apanya. 🌸",
+      "Kamu nggak aneh. Kamu hanya terlalu sering mikir buat orang yang nggak mikirin balik 🧠💔",
+      "Kamu pintar. Cantik. Unik. Lucu. Cowo mana nggak jatuh hati coba...? 😍",
+      "Yay! Kamu klik aku>< Kadang random things = random joy ✨🎈"
+    ];
+
+    function showMessage(index) {
+      alert(messages[index]);
+    }
+  </script>
+
+</body>
+</html>
